@@ -5,7 +5,8 @@ import random
 BACKGROUND_COLOR = "#B1DDC6"
 random_word = {}
 dictionary = {}
-# ----------------------------- CREATE NEW FLASH CARDS ------------------------------
+
+# ----------------------------- IMPORT DATA FROM FILES ------------------------------
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
@@ -13,6 +14,8 @@ except FileNotFoundError:
     dictionary = original_data.to_dict(orient="records")
 else:
     dictionary = data.to_dict(orient="records")
+
+# ----------------------------- CREATE NEW FLASH CARDS ------------------------------
 
 
 def next_card():
