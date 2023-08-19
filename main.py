@@ -65,7 +65,7 @@ right_button.grid(column=1, row=1)
 wrong_button = Button(image=wrong_img, highlightthickness=0, command=next_card)
 wrong_button.grid(column=0, row=1)
 
-next_card()
 flip_timer = window.after(3000, flip_card)
+next_card()
 
 window.mainloop()
