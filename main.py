@@ -7,6 +7,8 @@ random_word = {}
 dictionary = {}
 
 # ----------------------------- IMPORT DATA FROM FILES ------------------------------
+
+
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
